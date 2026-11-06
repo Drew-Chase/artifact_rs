@@ -4,4 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-bevy = {version = "0.20.1", features = ["2d"]}
+bevy = { version = "0.20.1", features = ["2d"] }
+
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+opt-level = "s"
+strip = true
