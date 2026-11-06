@@ -1,10 +1,10 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
     <option name="buildProfileId" value="dev" />
-    <option name="command" value="run --features dev" />
+    <option name="command" value="run" />
     <option name="workingDirectory" value="file://$PROJECT_DIR$" />
     <envs>
-      <env name="PATH" value="$PROJECT_DIR$\target\debug\deps;$USER_HOME$\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin;%PATH%" />
+      <env name="PATH" value="$PROJECT_DIR$/../artifact_rs\target\debug\deps;C:/Users/drew.chase\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin;%PATH%" />
     </envs>
     <option name="emulateTerminal" value="true" />
     <option name="channel" value="DEFAULT" />
