@@ -2,10 +2,16 @@
 name = "artifact_rs"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.97.1"
 
 [dependencies]
-bevy = { version = "0.20.1", features = ["2d"] }
+bevy = { version = "0.20.1", features = ["2d", "bevy_dev_tools", "render_dev_tools", "bevy_image"] }
+bevy_asset_packer = { version = "0.5.0" }
+bevy-wicon = { version = "0.20.0" }
 
+[build-dependencies]
+bevy_asset_packer = { version = "0.5.0", default-features = false }
+winres = "0.1.12"
 
 [profile.release]
 lto = true
